@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crud_</title>
+    <link rel="stylesheet" href="{% static 'enroll/css/bootstrap.css' %}" />
+    <link rel="icon" href="{% static 'enroll/favicon-32x32.png' %}" type="image/png">
+  </head>
+  <body>
+    <div class="container mt-1 mb-2">
+      <div class="shadow mb-1 bg-white rounded">
+        <h2 class="text-center alert alert-primary">Student Information</h2>
+      </div>
+      {% block content %}{% endblock content %}
+    </div>
+    <script src="{% static 'enroll/js/bootstrap.js' %}"></script>
+    <script src="{% static 'enroll/js/jquery.js' %}"></script>
+    <script src="{% static 'enroll/js/popper.js' %}"></script>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+{% extends "enroll/base.html" %} {% block content %}
+<div class="row">
+  <h7 class="text-sm-center mb-2">Please fill in your information carefully and accurately, and do not share your password with anyone.!</h7>
+  <div class="col-sm-8 offset-2">
+    <h4 class="alert alert-info text-sm-center">Update Student Information</h4>
+    <form action="" method="post">
+      {% csrf_token %}
+      {{form.as_p}}
+      <div class="text-lg-center">
+        <input type="submit" value="Update" class="btn btn-info" />
+        <a href="{% url 'addandshow' %}" class="btn btn-info">Back To Home</a>
+      </div>
+    </form>
+  </div>
+</div>
+{% endblock content %}
